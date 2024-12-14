@@ -76,7 +76,7 @@ def get_storage_url(gcs_uri: str) -> str:
     return "https://storage.googleapis.com/" + gcs_uri.split("gs://")[1]
 
 
-st.header("Vertex AI Gemini 1.5 API", divider="rainbow")
+st.header("Resonance", divider="rainbow")
 gemini_15_flash, gemini_15_pro = load_models()
 
 tab1, tab2, tab3, tab4 = st.tabs(
