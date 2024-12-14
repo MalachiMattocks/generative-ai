@@ -111,25 +111,22 @@ with tab1:
         key="character_location",
         value="Andromeda Galaxy",
     )
-    story_premise = st.multiselect(
-        "What is the story premise? (can select multiple) \n\n",
+    song_type = st.multiselect(
+        "What type of song? (can select multiple) \n\n",
         [
-            "Love",
-            "Adventure",
-            "Mystery",
-            "Horror",
-            "Comedy",
-            "Sci-Fi",
-            "Fantasy",
-            "Thriller",
+            "Uplifting",
+            "Inspiring",
+            "Match My Mood",
+            "Just Looking For a Good Song",
+        
         ],
-        key="story_premise",
-        default=["Love", "Adventure"],
+        key="song_type",
+        default=["Match My Mood"],
     )
-    creative_control = st.radio(
-        "Select the creativity level: \n\n",
-        ["Low", "High"],
-        key="creative_control",
+    Vocals_Instrumental = st.radio(
+        "Would you prefer vocals or instrumental?: \n\n",
+        ["Vocals", "Instrumental"],
+        key="Vocals_Instrumental",
         horizontal=True,
     )
     length_of_story = st.radio(
